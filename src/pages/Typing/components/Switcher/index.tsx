@@ -46,13 +46,13 @@ export default function Switcher() {
         <SoundSwitcher />
       </Tooltip>
 
-      <Tooltip className="h-7 w-7" content="设置单个单词循环">
+      {/* <Tooltip className="h-7 w-7" content="设置单个单词循环">
         <LoopWordSwitcher />
-      </Tooltip>
+      </Tooltip> */}
 
-      <Tooltip className="h-7 w-7" content={`开关默写模式（${CTRL} + V）`}>
+      {/* <Tooltip className="h-7 w-7" content={`开关默写模式（${CTRL} + V）`}>
         <WordDictationSwitcher />
-      </Tooltip>
+      </Tooltip> */}
       <Tooltip className="h-7 w-7" content={`开关释义显示（${CTRL} + Shift + V）`}>
         <button
           className={`p-[2px] ${state?.isTransVisible ? 'text-indigo-500' : 'text-gray-500'} text-lg focus:outline-none`}
@@ -67,9 +67,9 @@ export default function Switcher() {
         </button>
       </Tooltip>
 
-      <Tooltip content="错题本">
+      {/* <Tooltip content="错题本">
         <ErrorBookButton />
-      </Tooltip>
+      </Tooltip> */}
 
       <Tooltip className="h-7 w-7" content="查看数据统计">
         <AnalysisButton />

@@ -123,7 +123,7 @@ export default function SoundSetting() {
     <ScrollArea.Root className="flex-1 select-none overflow-y-auto ">
       <ScrollArea.Viewport className="h-full w-full px-3">
         <div className={styles.tabContent}>
-          <div className={styles.section}>
+          {/* <div className={styles.section}>
             <span className={styles.sectionLabel}>单词发音</span>
             <div className={styles.switchBlock}>
               <Switch checked={pronunciationConfig.isOpen} onChange={onTogglePronunciation} className="switch-root">
@@ -206,7 +206,7 @@ export default function SoundSetting() {
                 </div>
               </div>
             </div>
-          )}
+          )} */}
 
           <div className={styles.section}>
             <span className={styles.sectionLabel}>按键音</span>

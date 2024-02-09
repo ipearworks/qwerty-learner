@@ -16,13 +16,13 @@ import type { ReviewRecord } from '@/utils/db/record'
 import { atom } from 'jotai'
 import { atomWithStorage } from 'jotai/utils'
 
-export const currentDictIdAtom = atomWithStorage('currentDict', 'cet4')
+export const currentDictIdAtom = atomWithStorage('currentDict', 'childCode003')
 export const currentDictInfoAtom = atom<Dictionary>((get) => {
   const id = get(currentDictIdAtom)
   let dict = idDictionaryMap[id]
-  // 如果 dict 不存在，则返回 cet4. Typing 中会检查 DictId 是否存在，如果不存在则会重置为 cet4
+  // 如果 dict 不存在，则返回 childCode003. Typing 中会检查 DictId 是否存在，如果不存在则会重置为 childCode003
   if (!dict) {
-    dict = idDictionaryMap.cet4
+    dict = idDictionaryMap.childCode003
   }
   return dict
 })
@@ -50,7 +50,7 @@ export const hintSoundsConfigAtom = atomForConfig('hintSoundsConfig', {
 })
 
 export const pronunciationConfigAtom = atomForConfig('pronunciation', {
-  isOpen: true,
+  isOpen: false,
   volume: 1,
   type: 'us' as PronunciationType,
   name: '美音',

@@ -2851,12 +2851,12 @@ const germanExam: DictionaryResource[] = [
  * Why arrays? Because it keeps the order across browsers.
  */
 export const dictionaryResources: DictionaryResource[] = [
-  ...chinaExam,
-  ...internationalExam,
-  ...childrenEnglish,
+  // ...chinaExam,
+  // ...internationalExam,
+  // ...childrenEnglish,
   ...programming,
-  ...japaneseExam,
-  ...germanExam,
+  // ...japaneseExam,
+  // ...germanExam,
 
   // {
   //   id: 'zhtest',

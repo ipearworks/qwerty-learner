@@ -129,8 +129,7 @@ const App: React.FC = () => {
 
   return (
     <TypingContext.Provider value={{ state: state, dispatch }}>
-      <StarCard />
-      {state.isFinished && <DonateCard />}
+      {/* {state.isFinished && <DonateCard />} */}
       {state.isFinished && <ResultScreen />}
       <Layout>
         <Header>

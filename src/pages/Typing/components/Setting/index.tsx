@@ -110,7 +110,7 @@ export default function Setting() {
                           <IconEye className="mr-2 text-neutral-500  dark:text-neutral-300" />
                           <span className="text-neutral-500 dark:text-neutral-300">显示设置</span>
                         </Tab>
-                        <Tab
+                        {/* <Tab
                           className={({ selected }) =>
                             classNames(
                               'flex h-14 w-full cursor-pointer items-center gap-2 rounded-lg px-4 py-2 ring-0 focus:outline-none',
@@ -120,7 +120,7 @@ export default function Setting() {
                         >
                           <IconDatabaseCog className="mr-2 text-neutral-500  dark:text-neutral-300" />
                           <span className="text-neutral-500 dark:text-neutral-300">数据设置</span>
-                        </Tab>
+                        </Tab> */}
                       </Tab.List>
 
                       <Tab.Panels className="h-full w-full flex-1">
